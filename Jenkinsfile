@@ -23,7 +23,7 @@ pipeline{
 
     post{
         always{
-            cucumber jsonReportDirectory: 'cucumber-json',
+            cucumber jsonReportDirectory: 'cypress/cucumber-json',
                     fileIncludePattern: '**/*.json'
         }
     }
