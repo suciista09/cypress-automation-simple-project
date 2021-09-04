@@ -19,15 +19,17 @@ pipeline{
 
         stage('Run Test'){
             steps{
-                def execution
+                
                 script{
                     if(params.RUN=='All'){
-                        execution='npm run cypress-tags -- run -e TAGS=' + params.TAGS
+                        //execution='npm run cypress-tags -- run -e TAGS=' + params.TAGS
+                        sh ('npm run cypress-tags -- run -e TAGS="${params.TAGS}"')
                     }else{
-                        execution='npm test'
+                        //execution='npm test'
+                        sh ('npm test')
                     }
                 }
-                sh $execution
+                //sh $execution
             }
         }
 
