@@ -23,7 +23,7 @@ pipeline{
                 script{
                     if(params.RUN=='All'){
                         //execution='npm run cypress-tags -- run -e TAGS=' + params.TAGS
-                        sh ('npm run cypress-tags -- run -e TAGS='"+ params.TAGS + "')
+                        sh ('npm run cypress-tags -- run -e TAGS=''''+ params.TAGS + '''')
                     }else{
                         //execution='npm test'
                         sh ('npm test')
