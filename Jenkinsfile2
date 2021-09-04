@@ -21,12 +21,14 @@ pipeline{
             steps{
                 
                 script{
-                    if(params.RUN=='All'){
+                    println "RUN by " + params.RUN
+                    println "Tags: " + params.TAGS
+                    if(params.RUN=="All"){
                         //execution='npm run cypress-tags -- run -e TAGS=' + params.TAGS
-                        sh 'npm run cypress-tags -- run -e TAGS="' + params.TAGS + '"'
+                        sh 'npm test'
                     }else{
                         //execution='npm test'
-                        sh 'npm test'
+                        sh 'npm run cypress-tags -- run -e TAGS="' + params.TAGS + '"'
                     }
                 }
                 //sh $execution
