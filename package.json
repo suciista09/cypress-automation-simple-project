@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/cypress run --spec 'cypress/integration/**/*.feature' --browser chrome",
-    "cypress:open": "cypress open",
+    "cypress:open": "npx cypress open",
     "cypress-tags": "./node_modules/.bin/cypress-tags",
-    "reporter": "node cypress/support/reporter"
+    "reporter": "node cucumber-report.js"
 
   },
   "author": "suci i. jannah",

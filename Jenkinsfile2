@@ -1,0 +1,43 @@
+pipeline{
+    agent{
+        node{
+            label "docker-chrome"
+        }
+    }
+
+    parameters{
+        choice(name: 'RUN', choices: ['All', 'TAGS'], defaultValue: 'All', description: 'choose run all test or based on tags')
+        string(name: 'TAGS', defaultValue: '', description: 'specify tags if you choose run by TAGS')
+    }
+
+    stages{
+        stage('Preparation'){
+            steps{
+                sh 'npm install'
+            }
+        }
+
+        stage('Run Test'){
+            steps{
+                def execution
+                script{
+                    if(params.RUN=='All'){
+                        execution='npm run cypress-tags -- run -e TAGS=' + params.TAGS
+                    }else{
+                        execution='npm test'
+                    }
+                }
+                sh $execution
+            }
+        }
+
+
+    }
+
+    post{
+        always{
+            cucumber jsonReportDirectory: 'cypress/cucumber-json',
+                    fileIncludePattern: '**/*.json'
+        }
+    }
+}

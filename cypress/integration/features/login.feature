@@ -1,7 +1,9 @@
-Feature: Login
+Feature: My Feature
 
+@login
 Scenario: login with correct email and password
     Given user is in login page
     When user login using correct email and password
     Then user successfully logged in
+
 
