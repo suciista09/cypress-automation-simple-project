@@ -6,7 +6,7 @@ pipeline{
     }
 
     parameters{
-        choice(name: 'RUN', choices: ['All', 'TAGS'], defaultValue: 'All', description: 'choose run all test or based on tags')
+        choice(name: 'RUN', choices: ['All', 'TAGS'], description: 'choose run all test or based on tags')
         string(name: 'TAGS', defaultValue: '', description: 'specify tags if you choose run by TAGS')
     }
 
