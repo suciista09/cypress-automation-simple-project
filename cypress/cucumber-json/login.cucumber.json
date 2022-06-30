@@ -1,0 +1,56 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "My Feature",
+    "line": 1,
+    "id": "my-feature",
+    "tags": [],
+    "uri": "login.feature",
+    "elements": [
+      {
+        "id": "my-feature;login-with-correct-email-and-password",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "login with correct email and password",
+        "tags": [
+          {
+            "name": "@login",
+            "line": 3
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "user is in login page",
+            "result": {
+              "status": "failed",
+              "duration": 2539000000,
+              "error_message": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://automationpractice.com/\n\nThe response we received from your web server was:\n\n  > 508: Loop Detected\n\nThis was considered a failure because the status code was not `2xx`.\n\nIf you do not want status codes to cause failures pass the option: `failOnStatusCode: false`\n    at http://automationpractice.com/__cypress/runner/cypress_runner.js:156062:84\n    at visitFailedByErr (http://automationpractice.com/__cypress/runner/cypress_runner.js:155437:12)\n    at http://automationpractice.com/__cypress/runner/cypress_runner.js:156042:13\nFrom previous event:\n    at go (http://automationpractice.com/__cypress/runner/cypress_runner.js:156040:17)\n    at http://automationpractice.com/__cypress/runner/cypress_runner.js:156106:20\nFrom previous event:\n    at visit (http://automationpractice.com/__cypress/runner/cypress_runner.js:156104:38)\n    at Context.visit (http://automationpractice.com/__cypress/runner/cypress_runner.js:156113:14)\n    at http://automationpractice.com/__cypress/runner/cypress_runner.js:168605:17\nFrom previous event:\n    at runCommand (http://automationpractice.com/__cypress/runner/cypress_runner.js:168584:10)\n    at next (http://automationpractice.com/__cypress/runner/cypress_runner.js:168727:16)\n    at http://automationpractice.com/__cypress/runner/cypress_runner.js:168756:18\nFrom previous event:\n    at next (http://automationpractice.com/__cypress/runner/cypress_runner.js:168727:36)\nFrom previous event:\n    at http://automationpractice.com/__cypress/runner/cypress_runner.js:182911:79\nFrom previous event:\n    at Object.run (http://automationpractice.com/__cypress/runner/cypress_runner.js:182906:23)\n    at Object.run (http://automationpractice.com/__cypress/runner/cypress_runner.js:168782:17)\n    at cy.<computed> [as then] (http://automationpractice.com/__cypress/runner/cypress_runner.js:169952:19)\n    at runnable.fn (http://automationpractice.com/__cypress/runner/cypress_runner.js:170176:23)\n    at callFn (http://automationpractice.com/__cypress/runner/cypress_runner.js:122963:21)\n    at ../driver/node_modules/mocha/lib/runnable.js.Runnable.run (http://automationpractice.com/__cypress/runner/cypress_runner.js:122950:7)\n    at http://automationpractice.com/__cypress/runner/cypress_runner.js:176739:30\nFrom previous event:\n    at Object.onRunnableRun (http://automationpractice.com/__cypress/runner/cypress_runner.js:176724:19)\n    at $Cypress.action (http://automationpractice.com/__cypress/runner/cypress_runner.js:166256:28)\n    at Runnable.run (http://automationpractice.com/__cypress/runner/cypress_runner.js:174428:13)\n    at ../driver/node_modules/mocha/lib/runner.js.Runner.runTest (http://automationpractice.com/__cypress/runner/cypress_runner.js:123622:10)\n    at http://automationpractice.com/__cypress/runner/cypress_runner.js:123748:12\n    at next (http://automationpractice.com/__cypress/runner/cypress_runner.js:123531:14)\n    at http://automationpractice.com/__cypress/runner/cypress_runner.js:123541:7\n    at next (http://automationpractice.com/__cypress/runner/cypress_runner.js:123443:14)\n    at Hook.<anonymous> (http://automationpractice.com/__cypress/runner/cypress_runner.js:123504:7)\n    at next (http://automationpractice.com/__cypress/runner/cypress_runner.js:176649:24)\n    at http://automationpractice.com/__cypress/runner/cypress_runner.js:176678:13\nFrom previous event:\n    at onNext (http://automationpractice.com/__cypress/runner/cypress_runner.js:176675:59)\n    at done (http://automationpractice.com/__cypress/runner/cypress_runner.js:122903:5)\n    at callFn (http://automationpractice.com/__cypress/runner/cypress_runner.js:122986:7)\n    at ../driver/node_modules/mocha/lib/runnable.js.Runnable.run (http://automationpractice.com/__cypress/runner/cypress_runner.js:122950:7)\n    at http://automationpractice.com/__cypress/runner/cypress_runner.js:176739:30\nFrom previous event:\n    at Object.onRunnableRun (http://automationpractice.com/__cypress/runner/cypress_runner.js:176724:19)\n    at $Cypress.action (http://automationpractice.com/__cypress/runner/cypress_runner.js:166256:28)\n    at Runnable.run (http://automationpractice.com/__cypress/runner/cypress_runner.js:174428:13)\n    at next (http://automationpractice.com/__cypress/runner/cypress_runner.js:123465:10)\n    at http://automationpractice.com/__cypress/runner/cypress_runner.js:123509:5\n    at timeslice (http://automationpractice.com/__cypress/runner/cypress_runner.js:117435:27)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "user login using correct email and password",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "user successfully logged in",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

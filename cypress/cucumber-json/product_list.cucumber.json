@@ -1,0 +1,57 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Product List Feature",
+    "line": 1,
+    "id": "product-list-feature",
+    "tags": [],
+    "uri": "product_list.feature",
+    "elements": [
+      {
+        "id": "product-list-feature;user-able-to-open-women-category-page",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "User able to open women category page",
+        "tags": [
+          {
+            "name": "@women-category",
+            "line": 3
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "user is in homepage",
+            "result": {
+              "status": "passed",
+              "duration": 12693000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "user open 'Women' category",
+            "result": {
+              "status": "passed",
+              "duration": 7666000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "user is in 'Women' category page",
+            "result": {
+              "status": "passed",
+              "duration": 47000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

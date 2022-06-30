@@ -1,0 +1,17 @@
+[
+  {
+    "id": "1",
+    "name": "Clean House",
+    "isComplete": true
+  },
+  {
+    "id": "2",
+    "name": "Buy Eggs",
+    "isComplete": true
+  },
+  {
+    "id": "3",
+    "name": "Pay Bill",
+    "isComplete": false
+  }
+]

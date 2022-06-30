@@ -1,4 +1,4 @@
 {
-    "baseUrl": "http://automationpractice.com/",
-    "testFiles": "**/*.feature"
+  "baseUrl": "http://localhost:3030",
+  "testFiles": "**/*.spec.js"
 }
